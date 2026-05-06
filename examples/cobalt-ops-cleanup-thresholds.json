@@ -1,0 +1,17 @@
+{
+  "repo": "cobalt-ops-cleanup-deck",
+  "thresholds": {
+    "signal": 4,
+    "slack": 2,
+    "confidence": 2,
+    "drag": 2,
+    "ship": 173,
+    "watch": 127
+  },
+  "terms": [
+    "dry-run spread",
+    "rename risk",
+    "operator cost",
+    "idempotence"
+  ]
+}
