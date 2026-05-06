@@ -1,0 +1,73 @@
+{
+  "repo": "cobalt-ops-cleanup-deck",
+  "language": "JavaScript",
+  "category": "Automation",
+  "goal": "Develop a JavaScript command-oriented project for cleanup scenarios with negative fixtures, human-readable error snapshots, and local-only command execution.",
+  "review_model": {
+    "terms": [
+      "dry-run spread",
+      "rename risk",
+      "operator cost",
+      "idempotence"
+    ],
+    "lanes": [
+      "ship",
+      "watch",
+      "hold"
+    ],
+    "score": "signal * 2 + slack + confidence - drag * 3",
+    "purpose": "surface the domain-specific cases that need the most careful review"
+  },
+  "cases": [
+    {
+      "name": "baseline",
+      "focus": "dry-run spread",
+      "signal": 78,
+      "slack": 35,
+      "drag": 29,
+      "confidence": 53,
+      "score": 157,
+      "lane": "ship"
+    },
+    {
+      "name": "stress",
+      "focus": "rename risk",
+      "signal": 78,
+      "slack": 34,
+      "drag": 24,
+      "confidence": 47,
+      "score": 165,
+      "lane": "ship"
+    },
+    {
+      "name": "edge",
+      "focus": "operator cost",
+      "signal": 55,
+      "slack": 51,
+      "drag": 21,
+      "confidence": 58,
+      "score": 156,
+      "lane": "ship"
+    },
+    {
+      "name": "recovery",
+      "focus": "idempotence",
+      "signal": 86,
+      "slack": 21,
+      "drag": 9,
+      "confidence": 60,
+      "score": 226,
+      "lane": "ship"
+    },
+    {
+      "name": "stale",
+      "focus": "dry-run spread",
+      "signal": 72,
+      "slack": 39,
+      "drag": 22,
+      "confidence": 48,
+      "score": 165,
+      "lane": "ship"
+    }
+  ]
+}

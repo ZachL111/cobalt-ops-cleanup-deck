@@ -59,3 +59,7 @@ foreach ($pathPattern in $knownPaths) {
 }
 
 node tests/policy.test.js
+
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts/check-cobalt-ops-cleanup-detail.ps1
+
+node tests/domainReview.test.js
